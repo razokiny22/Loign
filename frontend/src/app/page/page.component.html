@@ -1,0 +1,8 @@
+<div class="page">
+<app-sidemenu></app-sidemenu>
+<div class="container">
+    <h1 style="font-size:3rem; margin-top:20px;">Bonjour {{username}}</h1>
+    <mat-progress-spinner *ngIf="!data"></mat-progress-spinner>
+    <app-table *ngIf="data" [data]="data"></app-table>
+</div>
+</div>

@@ -1,0 +1,24 @@
+<form novalidate [formGroup]="RegisterForm"(ngSubmit)="connexion()" class="sign-up-form " >
+    <div class="title">Sign Up</div>
+    <div class="input-field">
+        <i class="fa fa-user"></i>
+        <input formControlName="username" type="text" placeholder="Username">
+    </div>
+    <div class="input-field">
+        <i class="fa fa-envelope"></i>
+        <input formControlName="email"type="text" placeholder="e-mail">
+    </div>
+    <div class="input-field">
+        <i class="fa fa-toolbox"></i>
+        <input formControlName="role"type="text" placeholder="Role">
+    </div>
+    <div class="input-field">
+        <i class="fa fa-lock"></i>
+        <input formControlName="password"type="password" placeholder="Password">
+    </div>
+    <div class="input-field">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Confirm">
+    </div>
+    <input type="submit" class="btn" value="Login" >
+</form>

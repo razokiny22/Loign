@@ -1,0 +1,35 @@
+
+<div [ngClass]="{'navbar':true,'active':isActive}">
+    <ul>
+        <li>
+            <a href="">
+            <i class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon></i>
+
+            <span class="title">dashboard</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="">
+            <i  class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings"></mat-icon></i>
+            <span class="title">Gestion</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="">
+            <i  class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="folder"></mat-icon></i>
+            <span class="title">settings</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="">
+            <i  class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="logout"></mat-icon></i>
+            <span class="title">Logout</span>
+            </a>
+            
+        </li>
+    </ul>
+    <div class="toggle"(click)="active()"></div>
+</div>
